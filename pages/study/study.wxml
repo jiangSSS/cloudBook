@@ -1,0 +1,10 @@
+<view class='book-hander'>
+  <view class='box-top' >
+    <image src='{{readData.img}}' class='img'></image>   
+    <view class='title'>{{readData.title}}</view>
+    <view class='box-bottom'>
+      <button class='btn'>继续阅读</button>
+      <button class='btn'>查看文档</button>
+    </view>
+  </view>
+</view>

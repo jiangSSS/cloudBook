@@ -1,0 +1,14 @@
+/* pages/catalog/catalog.wxss */
+
+.catalog{
+  font-size: 16px;
+  color: #333;
+}
+.catalog-item{  
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+.catalog .link{
+  line-height: 2;
+  border-bottom: 2rpx solid #333;
+}

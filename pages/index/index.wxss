@@ -1,0 +1,131 @@
+/* pages/home/home.wxss */
+.swiper{
+  width: 100%;
+  padding: 0 20rpx;
+}
+
+swiper image{
+  width: 710rpx;
+  height: 350rpx;
+}
+.main-content{
+  padding: 0rpx 40rpx 0rpx 10rpx;
+}
+
+.content-item{
+  margin-top: 40rpx;
+}
+.content-item .sort{
+  font-size: 16px;
+  padding-left: 20rpx;
+  border-left: 2px solid #000;
+  line-height: 26rpx;
+  height: 26rpx;
+}
+.content-item .content{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  
+
+}
+.content .box-l .img{
+  width: 230rpx;
+  height: 300rpx;
+}
+.box-r{
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-r .book-title{
+  font-size: 16px;
+  color: #333;
+
+}
+.box-r .book-content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  color: #444;
+  font-size: 14px;
+}
+.box-r .book-footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.isLoading{
+  width: 500rpx;
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* * 上拉刷新 * */
+.loadmore {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.loadmore image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.loadmore text {
+  line-height: 50rpx;
+  height: 50rpx;
+  padding-left: 20rpx;
+}
+
+.no-more {
+  position: relative;
+  line-height: 50rpx;
+  height: 50rpx;
+  margin-bottom: 100rpx;
+  text-align: center;
+  background: #f1f1f1;
+  font-size: 14px;
+  color: #9e9e9e;
+}
+
+.no-more text {
+  position: relative;
+  z-index: 698;
+  padding: 0 20rpx;
+  background: #f1f1f1;
+}
+
+.no-more .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0; 
+  transform: translate(-50%, -50%);
+  width: 560rpx;
+  height: 1rpx;
+  background: #ccc;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid #f1f1f1;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #fff;
+}

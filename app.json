@@ -1,0 +1,16 @@
+{
+  "pages":[   
+    "pages/index/index",
+    "pages/details/details",
+    "pages/books/books" ,
+    "pages/catalog/catalog",
+    "pages/study/study" 
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云书库~",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,5 @@
+<view class='menu'>
+  <view class='home'>首页</view>
+  <view class='study' bindtap='jumpStudy'>我的学习</view>
+  <view class='mine'>个人中心</view>
+</view>

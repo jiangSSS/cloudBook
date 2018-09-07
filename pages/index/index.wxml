@@ -1,0 +1,52 @@
+<!--index.wxml-->
+
+<view>
+  <view>
+    <view class='swiper'>
+      <image src='/static/img/st1.svg' class='isLoading' wx:if="{{isLoading}}" wx:key="{{index}}"></image>
+      <swiper indicator-dots indicator-color='blue' indicator-active-color='green' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{swiperData}}" wx:key="{{index}}">
+          <swiper-item bindtap="jumpBook" data-id="{{item.book._id}}">
+            <image src="{{item.img}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='main-content'>
+        <view class='content-item' wx:for="{{mainContent}}" wx:key="{{index}}">
+          <view class='sort'>{{item.title}}</view>
+          <view class='content' wx:for="{{item.books}}" wx:key="{{index}} " bindtap='jumpBook' wx:for-item="bookItem" data-id="{{bookItem._id}}">
+            <view class='box-l'>
+              <image src="{{bookItem.img}}" class='img'></image>
+            </view>
+            <view class='box-r'>
+              <view class='book-title'>{{bookItem.title}}</view>
+              <view class='book-content'>{{bookItem.desc}}</view>
+              <view class='book-footer'>
+                <text class='author'>{{bookItem.author}}</text>
+                <text class='create-time'>两天前</text>
+                <text class='category'>后端开发</text>
+                <text class='look-nums'>{{bookItem.looknums}}人在看</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view wx:if="{{hasMore}}" class="loadmore">
+        <image src="/static/img/st1.svg"></image>
+        <text>数据正拼命加载中...</text>
+      </view>
+      <view wx:else="{{!hasMore}}" class="no-more">
+        <text>我是有底线的</text>
+        <text class="line"></text>
+      </view>
+    </view>
+    <view class='menu'>
+      <view class='home'>首页</view>
+      <view class='study' bindtap='jumpStudy'>我的学习</view>
+      <view class='mine'>个人中心</view>
+    </view>
+  </view>
+
+</view>
